@@ -8,7 +8,7 @@ import Image from "next/image";
 
 export const Header = () => {
   return (
-    <header className="sticky top-0 backdrop-blur-sm">
+    <header className="sticky top-0 backdrop-blur-sm z-20">
       <div className="flex justify-center items-center py-3 bg-black text-white text-sm gap-3">
         <p className="text-white/60 hidden md:block">
           Streamline your workflow and boost your productivity
@@ -18,7 +18,7 @@ export const Header = () => {
           <ArrowRight className="h-4 inline-flex justify-center items-center" />
         </div>
       </div>
-      <div className="py-5">
+      <div className="py-5 bg-white/20">
         <div className="container px-4 md:px-0">
           <div className="flex justify-between items-center">
             <Image src={Logo1} alt="" className="w-16 md:w-[80]" />
