@@ -1,7 +1,7 @@
 import { ArrowRight, AlignJustify } from "lucide-react";
 // import Logo from "@/assets/logosaas.png";
 import Logo1 from "@/assets/falcon1-logo.png";
-import Logo2 from "@/assets/falcon2-logo.png";
+// import Logo2 from "@/assets/falcon2-logo.png";
 import Link from "next/link";
 
 import Image from "next/image";

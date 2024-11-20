@@ -1,4 +1,4 @@
-const pricingTiers = [
+export const pricingTiers = [
   {
     title: "Free",
     monthlyPrice: 0,
