@@ -9,7 +9,7 @@ export const Hero = () => {
     <section className="pt-8 pb-20 md:pt-5 md:pb-10 bg-gradient-to-t from-blue-500 to-white/20 overflow-x-clip">
       <div className="container px-4 md:px-0">
         <div className="md:flex items-center">
-          <div className="md:w-[478px]">
+          <div className="md:w-[478px] ml-12">
             <div className="tag">version 1.0 is here</div>
             <h1 className="text-5xl md:text-7xl font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text mt-6">
               Pathway to Productivity
@@ -44,7 +44,7 @@ export const Hero = () => {
               alt=""
               width={220}
               height={220}
-              className="hidden lg:block md:block top-[524px] lg:left-[800px] md:absolute rotate-[30deg]"
+              className="hidden lg:block md:block top-[524px] lg:left-[700px] md:absolute rotate-[30deg]"
             ></Image>
           </div>
         </div>
