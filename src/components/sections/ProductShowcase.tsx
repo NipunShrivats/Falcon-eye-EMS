@@ -27,15 +27,15 @@ export const ProductShowcase = () => {
           <Image
             src={pyramidImage}
             alt=""
-            height={262}
-            width={262}
-            className="hidden md:block absolute -right-36 -top-32"
+            // className="hidden md:block absolute -right-36 -top-32"
+            className="absolute -top-2 -right-8 w-[6rem] md:w-[8rem] lg:w-[12rem] lg:-right-24"
           />
           <Image
             src={tubeImage}
             alt=""
             height={248}
-            className="hidden md:block absolute bottom-24 -left-36"
+            // className="hidden md:block absolute bottom-24 -left-36"
+            className="absolute top-36 -left-12 w-[6rem] md:w-[8rem] md:top-[18rem] md:-left-10 lg:w-[12rem] lg:-left-24"
           />
         </div>
       </div>
