@@ -7,8 +7,9 @@ import "./globals.css";
 const dmSans = DM_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Light Saas Landing Page",
-  description: "Template created by Frontend Tribe",
+  title: "Falcon Eye | EMS",
+  description:
+    "Falcon Eye is an Employee Managemnet System built by 'Nipun Shrivats' & 'Deepak Kahar' for Sensationz Media & Arts Pvt. Ltd.",
 };
 
 export default function RootLayout({
