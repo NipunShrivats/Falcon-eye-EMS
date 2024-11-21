@@ -23,7 +23,7 @@ export const Header = () => {
           <div className="flex justify-between items-center">
             <Image src={Logo1} alt="" className="w-16 md:w-[80]" />
             {/* hamburger icons */}
-            <AlignJustify className="md:hidden w-7 h-7 border border-neutral-950 rounded-sm" />
+            <AlignJustify className="md:hidden w-8 h-7 border border-neutral-950 rounded-sm" />
             <nav className="hidden md:flex gap-6 text-black/60 items-center">
               <Link href="#">About</Link>
               <Link href="#">Features</Link>
