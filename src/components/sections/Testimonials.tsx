@@ -9,8 +9,9 @@ import avatar8 from "@/assets/avatar-8.png";
 import avatar9 from "@/assets/avatar-9.png";
 
 import Image from "next/image";
+import { twMerge } from "tailwind-merge";
 
-export const testimonials = [
+const testimonials = [
   {
     text: "As a seasoned designer always on the lookout for innovative tools, Framer.com instantly grabbed my attention.",
     imageSrc: avatar1.src,
@@ -50,7 +51,7 @@ export const testimonials = [
   {
     text: "Adopting this app for our team has streamlined our project management and improved communication across the board.",
     imageSrc: avatar7.src,
-    name: "Jordan Patels",
+    name: "Jordar Patel",
     username: "@jpatelsdesign",
   },
   {
@@ -71,39 +72,62 @@ const firstColumn = testimonials.slice(0, 3);
 const secondColumn = testimonials.slice(3, 6);
 const thirdColumn = testimonials.slice(6, 9);
 
+const TestimonialsColumn = (props: {
+  className?: string;
+  testimonials: typeof testimonials;
+}) => {
+  return (
+    <div
+      className={twMerge(
+        "flex flex-col items-center justify-center gap-6 mt-10 masking-effect-topBottom",
+        props.className
+      )}
+    >
+      {props.testimonials.map(({ text, imageSrc, name, username }, index) => (
+        <div className="card" key={index}>
+          <div>{text}</div>
+          <div className="flex items-center gap-2 mt-5">
+            <Image
+              src={imageSrc}
+              alt={name}
+              width={40}
+              height={40}
+              className="h-10 w-10 rounded-full"
+            />
+            <div className="flex flex-col">
+              <div className="font-medium tracking-tight leading-5">{name}</div>
+              <div className="leading-5 tracking-tight">{username}</div>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+};
 export const Testimonials = () => {
   return (
     <section className="bg-white py-0">
       <div className="container">
-        <div className="flex justify-center">
-          <div className="tag">Testimonials</div>
+        <div className="section-heading">
+          <div className="flex justify-center">
+            <div className="tag">Testimonials</div>
+          </div>
+          <h2 className="section-title">What are usres say</h2>
+          <p className="section-description mt-5">
+            From intutive design to powerful features, our app has become an
+            essential tool for users around the world.
+          </p>
         </div>
-        <h2 className="section-title">What are usres say</h2>
-        <p className="section-description mt-5">
-          From intutive design to powerful features, our app has become an
-          essential tool for users around the world.
-        </p>
-        <div>
-          {firstColumn.map(({ text, imageSrc, name, username }) => (
-            <div className="card">
-              <div>{text}</div>
-              <div className="flex items-center gap-2 mt-5">
-                <Image
-                  src={imageSrc}
-                  alt={name}
-                  width={40}
-                  height={40}
-                  className="h-10 w-10 rounded-full"
-                />
-                <div className="flex flex-col">
-                  <div className="font-medium tracking-tight leading-5">
-                    {name}
-                  </div>
-                  <div className="leading-5 tracking-tight">{username}</div>
-                </div>
-              </div>
-            </div>
-          ))}
+        <div className="flex  items-center justify-center gap-6">
+          <TestimonialsColumn testimonials={firstColumn} />
+          <TestimonialsColumn
+            testimonials={secondColumn}
+            className="hidden md:flex"
+          />
+          <TestimonialsColumn
+            testimonials={thirdColumn}
+            className="hidden lg:flex"
+          />
         </div>
       </div>
     </section>

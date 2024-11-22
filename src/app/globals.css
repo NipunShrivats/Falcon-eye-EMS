@@ -22,6 +22,9 @@
   .masking-effect {
     mask-image: linear-gradient(to right, transparent, black, transparent);
   }
+  .masking-effect-topBottom {
+    mask-image: linear-gradient(to top, transparent, black, transparent);
+  }
 
   .tag {
     @apply text-sm inline-flex border border-[#222]/10 px-3 py-1 rounded-lg tracking-tight;
@@ -36,7 +39,15 @@
   }
 
   .rangeela {
-    background: linear-gradient(to right, #dd7ddf, #E1CD86, #BBCD92, #71C2EF, #3BFFFF, #DD7DDF);
+    background: linear-gradient(
+      to right,
+      #dd7ddf,
+      #e1cd86,
+      #bbcd92,
+      #71c2ef,
+      #3bffff,
+      #dd7ddf
+    );
   }
 
   .section-heading {
