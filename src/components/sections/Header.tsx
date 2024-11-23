@@ -1,5 +1,5 @@
 "use client";
-import { ArrowRight, AlignJustify, Divide } from "lucide-react";
+import { ArrowRight, AlignJustify } from "lucide-react";
 import Logo1 from "@/assets/falcon1-logo.png";
 import SideNav from "../SideNav";
 
