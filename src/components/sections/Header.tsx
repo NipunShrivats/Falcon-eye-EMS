@@ -11,13 +11,14 @@ export const Header = () => {
   const [isClick, setIsClick] = useState(false);
 
   const toggleNavbar = () => {
-    // console.log("check");
     setIsClick(!isClick);
+    console.log("toggle navbar", isClick);
   };
 
   return (
     <header className="sticky top-0 backdrop-blur-sm z-20">
       {/* sidebar component */}
+      {/* <SideNav isActive={isClick} /> */}
       {isClick && <SideNav isActive={isClick} />}
       {/* sidebar component */}
       <div className="flex justify-center items-center py-3 bg-black text-white text-sm gap-3 relative">
@@ -36,7 +37,9 @@ export const Header = () => {
 
             {/* hamburger icon */}
             <AlignJustify
-              className="md:hidden w-8 h-7 border border-neutral-950 rounded-sm z-50 hamburger"
+              className={`md:hidden w-8 h-7 rounded-sm z-50 hamburger ${
+                isClick ? "isActive" : "isinActive"
+              }`}
               onClick={toggleNavbar}
             />
             {/* hamburger icon */}

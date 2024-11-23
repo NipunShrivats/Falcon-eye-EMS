@@ -2,8 +2,12 @@ import React from "react";
 import Link from "next/link";
 
 export default function SideNav(isActive: { isActive: boolean }) {
+  console.log("from sidenav", isActive);
   return (
-    <section className={`navBarStyle-box absolute z-50 `}>
+    <section
+      className={`navBarStyle-box absolute z-50
+    ${isActive ? "navVisible" : "NavHidden"}`}
+    >
       <nav className="relative navBarStyle text-black">
         <Link href="#">About</Link>
         <Link href="#">Features</Link>

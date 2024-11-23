@@ -40,15 +40,13 @@
   }
 
   .rangeela {
-    background: linear-gradient(
-      to right,
-      #dd7ddf,
-      #e1cd86,
-      #bbcd92,
-      #71c2ef,
-      #3bffff,
-      #dd7ddf
-    );
+    background: linear-gradient(to right,
+        #dd7ddf,
+        #e1cd86,
+        #bbcd92,
+        #71c2ef,
+        #3bffff,
+        #dd7ddf);
   }
 
   .section-heading {
@@ -62,11 +60,13 @@
   .navBarStyle-box {
     /* border: 2px solid red; */
     display: flex;
-    width: 70%;
+    width: 60%;
     height: 100vh;
     background-color: rgba(255, 255, 255, 0.974);
     margin-top: 2.8rem;
+    /* left: -100vh;   */
   }
+
   .navBarStyle {
     /* border: 2px solid red; */
     color: white;
@@ -77,4 +77,24 @@
     width: 100%;
     gap: 2rem;
   }
+
+  .isActive {
+    transform: rotate(90deg);
+    transition: 0.2s;
+  }
+
+  .isinActive {
+    transform: rotate(0deg);
+    transition: 0.2s;
+  }
+
+  /* .navVisible {
+    left: -100px;
+
+  }
+
+  .NavHidden {
+    left: 200px;
+  } */
+
 }
