@@ -1,13 +1,6 @@
 import React from "react";
 // import Link from "next/link";
-import {
-  Link,
-  Button,
-  Element,
-  Events,
-  animateScroll as scroll,
-  scrollSpy,
-} from "react-scroll";
+import { Link } from "react-scroll";
 
 export default function SideNav(isActive: { isActive: boolean }) {
   console.log("from sidenav", isActive);

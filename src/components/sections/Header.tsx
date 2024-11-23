@@ -4,14 +4,7 @@ import Logo1 from "@/assets/falcon1-logo.png";
 import SideNav from "../SideNav";
 
 // import Link from "next/link";
-import {
-  Link,
-  Button,
-  Element,
-  Events,
-  animateScroll as scroll,
-  scrollSpy,
-} from "react-scroll";
+import { Link } from "react-scroll";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -62,12 +55,7 @@ export const Header = () => {
               <Link to="pricing" smooth={true} offset={-100} duration={500}>
                 Features
               </Link>
-              <Link
-                to="testimonials"
-                smooth={true}
-                offset={-400}
-                duration={500}
-              >
+              <Link to="testimonials" smooth={true} offset={-40} duration={500}>
                 Reviews
               </Link>
               <Link to="footer" smooth={true} offset={100} duration={500}>
