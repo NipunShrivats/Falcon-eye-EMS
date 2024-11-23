@@ -6,7 +6,10 @@ import Image from "next/image";
 
 export const ProductShowcase = () => {
   return (
-    <section className="bg-gradient-to-b from-[#ffffff] to-[#D2DCFF] py-24 overflow-x-clip">
+    <section
+      className="bg-gradient-to-b from-[#ffffff] to-[#D2DCFF] py-24 overflow-x-clip"
+      id="product"
+    >
       <div className="container">
         <div className="section-heading">
           <div className="flex justify-center ">

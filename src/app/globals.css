@@ -78,6 +78,10 @@
     gap: 2rem;
   }
 
+  .navBarStyle a {
+    cursor: pointer;
+  }
+
   .isActive {
     transform: rotate(90deg);
     transition: 0.2s;
@@ -88,6 +92,10 @@
     transition: 0.2s;
   }
 
+  .hamburger {
+    cursor: pointer;
+  }
+
   /* .navVisible {
     left: -100px;
 
@@ -96,5 +104,4 @@
   .NavHidden {
     left: 200px;
   } */
-
 }

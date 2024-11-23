@@ -82,6 +82,7 @@ const TestimonialsColumn = (props: {
         "flex flex-col items-center justify-center gap-6 mt-10 masking-effect-topBottom",
         props.className
       )}
+      id="testimonials"
     >
       {props.testimonials.map(({ text, imageSrc, name, username }, index) => (
         <div className="card" key={index}>

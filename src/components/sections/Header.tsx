@@ -3,7 +3,15 @@ import { ArrowRight, AlignJustify } from "lucide-react";
 import Logo1 from "@/assets/falcon1-logo.png";
 import SideNav from "../SideNav";
 
-import Link from "next/link";
+// import Link from "next/link";
+import {
+  Link,
+  Button,
+  Element,
+  Events,
+  animateScroll as scroll,
+  scrollSpy,
+} from "react-scroll";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -16,7 +24,7 @@ export const Header = () => {
   };
 
   return (
-    <header className="sticky top-0 backdrop-blur-sm z-20">
+    <header className="sticky top-0 backdrop-blur-sm z-20" id="header">
       {/* sidebar component */}
       {/* <SideNav isActive={isClick} /> */}
       {isClick && <SideNav isActive={isClick} />}
@@ -45,13 +53,28 @@ export const Header = () => {
             {/* hamburger icon */}
 
             <nav className="hidden md:flex gap-6 text-black/60 items-center">
-              <Link href="#">About</Link>
-              <Link href="#">Features</Link>
-              <Link href="#">Customers</Link>
-              <Link href="#">Updates</Link>
-              <Link href="#">Help</Link>
+              <Link to="header" smooth={true} offset={-5000} duration={500}>
+                Home
+              </Link>
+              <Link to="product" smooth={true} offset={-100} duration={500}>
+                How to use
+              </Link>
+              <Link to="pricing" smooth={true} offset={-100} duration={500}>
+                Features
+              </Link>
+              <Link
+                to="testimonials"
+                smooth={true}
+                offset={-400}
+                duration={500}
+              >
+                Reviews
+              </Link>
+              <Link to="footer" smooth={true} offset={100} duration={500}>
+                Help
+              </Link>
 
-              <button className="btn btn-primary">Get for free</button>
+              <button className="btn btn-primary">Login</button>
             </nav>
           </div>
         </div>

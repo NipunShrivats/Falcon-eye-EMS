@@ -6,7 +6,10 @@ import Link from "next/link";
 import { Instagram, Github } from "lucide-react";
 export const Footer = () => {
   return (
-    <footer className="bg-black text-[#BCBCBC] text-sm py-10 text-center">
+    <footer
+      className="bg-black text-[#BCBCBC] text-sm py-10 text-center"
+      id="footer"
+    >
       <div className="container">
         <div className="flex justify-center items-center flex-col">
           <Image src={logo} height={40} alt="" className="w-20" />
