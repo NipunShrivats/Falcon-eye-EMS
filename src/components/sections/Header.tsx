@@ -1,7 +1,5 @@
 import { ArrowRight, AlignJustify } from "lucide-react";
-// import Logo from "@/assets/logosaas.png";
 import Logo1 from "@/assets/falcon1-logo.png";
-// import Logo2 from "@/assets/falcon2-logo.png";
 import Link from "next/link";
 
 import Image from "next/image";
@@ -9,7 +7,7 @@ import Image from "next/image";
 export const Header = () => {
   return (
     <header className="sticky top-0 backdrop-blur-sm z-20">
-      <div className="flex justify-center items-center py-3 bg-black text-white text-sm gap-3">
+      <div className="flex justify-center items-center py-3 bg-black text-white text-sm gap-3 relative">
         <p className="text-white/60 hidden md:block">
           Streamline your workflow and boost your productivity
         </p>
@@ -31,7 +29,7 @@ export const Header = () => {
               <Link href="#">Updates</Link>
               <Link href="#">Help</Link>
 
-              <button className="btn btn-primary">Get for free</button>
+              <button className="btn">Get for free</button>
             </nav>
           </div>
         </div>

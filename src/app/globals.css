@@ -22,6 +22,7 @@
   .masking-effect {
     mask-image: linear-gradient(to right, transparent, black, transparent);
   }
+
   .masking-effect-topBottom {
     mask-image: linear-gradient(to top, transparent, black, transparent);
   }
@@ -39,15 +40,13 @@
   }
 
   .rangeela {
-    background: linear-gradient(
-      to right,
-      #dd7ddf,
-      #e1cd86,
-      #bbcd92,
-      #71c2ef,
-      #3bffff,
-      #dd7ddf
-    );
+    background: linear-gradient(to right,
+        #dd7ddf,
+        #e1cd86,
+        #bbcd92,
+        #71c2ef,
+        #3bffff,
+        #dd7ddf);
   }
 
   .section-heading {
