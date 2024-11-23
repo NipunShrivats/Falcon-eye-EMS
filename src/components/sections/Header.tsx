@@ -1,12 +1,25 @@
-import { ArrowRight, AlignJustify } from "lucide-react";
+"use client";
+import { ArrowRight, AlignJustify, Divide } from "lucide-react";
 import Logo1 from "@/assets/falcon1-logo.png";
-import Link from "next/link";
+import SideNav from "../SideNav";
 
+import Link from "next/link";
 import Image from "next/image";
+import { useState } from "react";
 
 export const Header = () => {
+  const [isClick, setIsClick] = useState(false);
+
+  const toggleNavbar = () => {
+    // console.log("check");
+    setIsClick(!isClick);
+  };
+
   return (
     <header className="sticky top-0 backdrop-blur-sm z-20">
+      {/* sidebar component */}
+      {isClick && <SideNav isActive={isClick} />}
+      {/* sidebar component */}
       <div className="flex justify-center items-center py-3 bg-black text-white text-sm gap-3 relative">
         <p className="text-white/60 hidden md:block">
           Streamline your workflow and boost your productivity
@@ -20,8 +33,14 @@ export const Header = () => {
         <div className="container px-4 md:px-0">
           <div className="flex justify-between items-center">
             <Image src={Logo1} alt="" className="w-16 md:w-[80]" />
-            {/* hamburger icons */}
-            <AlignJustify className="md:hidden w-8 h-7 border border-neutral-950 rounded-sm" />
+
+            {/* hamburger icon */}
+            <AlignJustify
+              className="md:hidden w-8 h-7 border border-neutral-950 rounded-sm z-50 hamburger"
+              onClick={toggleNavbar}
+            />
+            {/* hamburger icon */}
+
             <nav className="hidden md:flex gap-6 text-black/60 items-center">
               <Link href="#">About</Link>
               <Link href="#">Features</Link>
