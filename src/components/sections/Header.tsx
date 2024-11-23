@@ -29,7 +29,7 @@ export const Header = () => {
               <Link href="#">Updates</Link>
               <Link href="#">Help</Link>
 
-              <button className="btn">Get for free</button>
+              <button className="btn btn-primary">Get for free</button>
             </nav>
           </div>
         </div>
