@@ -24,7 +24,7 @@ export default {
   			}
   		},
   		container: {
-  			center: 'true'
+  			center: true
   		},
   		borderRadius: {
   			lg: 'var(--radius)',
