@@ -2,6 +2,7 @@ import { ArrowRight } from "lucide-react";
 import starImage from "@/assets/star.png";
 import springImage from "@/assets/spring.png";
 import Image from "next/image";
+import { motion } from "motion/react";
 
 export const CallToAction = () => {
   return (
@@ -13,18 +14,34 @@ export const CallToAction = () => {
             Celebrate the joy of accomplishment with an app designed to track
             your progress and motivate your efforts
           </p>
-          <Image
-            src={starImage}
+          <motion.img
+            src={starImage.src}
             alt="Star Image"
             className="absolute w-20 -left-8 -top-4 md:w-36 md:-left-32 md:-top-6 
             lg:w-[200px] lg:-left-[400px] lg:-top-6"
-          ></Image>
-          <Image
-            src={springImage}
+            animate={{
+              rotate: "360deg",
+            }}
+            transition={{
+              repeat: Infinity,
+              repeatType: "mirror",
+              duration: 40,
+            }}
+          />
+          <motion.img
+            src={springImage.src}
             alt="spring Image"
             className="absolute w-24 -right-6 -bottom-36 md:w-36 md:-right-32 md:-bottom-36
             lg:w-[200px] lg:-right-[400px] lg:-bottom-[180px]"
-          ></Image>
+            animate={{
+              translateY: [-150, 0],
+            }}
+            transition={{
+              repeat: Infinity,
+              repeatType: "mirror",
+              duration: 10,
+            }}
+          />
         </div>
         <div className="flex gap-2 mt-10 justify-center">
           <button className="btn btn-primary">Get for free</button>
