@@ -7,18 +7,18 @@ import noodleImage from "@/assets/noodle.png";
 
 import {
   motion,
-  useScroll,
-  useTransform,
+  // useScroll,
+  // useTransform,
   // useMotionValueEvent,
 } from "motion/react";
 import { useRef } from "react";
 
 export const Hero = () => {
   const heroRef = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: heroRef,
-    offset: ["start end", "end start"],
-  });
+  // const { scrollYProgress } = useScroll({
+  //   target: heroRef,
+  //   offset: ["start end", "end start"],
+  // });
   // const translateY = useTransform(scrollYProgress, [0, 1], [150, -150]);
   return (
     <section
