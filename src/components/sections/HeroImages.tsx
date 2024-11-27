@@ -32,7 +32,7 @@ export default function HeroImages() {
         alt=""
         className="absolute -top-24 w-20 md:w-28 md:-top-6"
         animate={{
-          translateY: [-30, 500],
+          translateY: [-30, 30],
           // rotate: "45deg",
         }}
         transition={{
@@ -49,7 +49,7 @@ export default function HeroImages() {
         className="absolute right-6 w-20 md:w-28 md:bottom-0 md:-left-16 xl:left-[50rem] xl:w-36"
         // style={{ translateY: translateY }}
         animate={{
-          translateY: [30, -500],
+          translateY: [30, -30],
           // rotate: "45deg",
         }}
         transition={{
