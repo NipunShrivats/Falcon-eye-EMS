@@ -2,9 +2,9 @@
 import { ArrowRight, AlignJustify } from "lucide-react";
 import Logo1 from "@/assets/falcon1-logo.png";
 import SideNav from "../SideNav";
+import Link from "next/link";
 
-// import Link from "next/link";
-import { Link } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -19,7 +19,6 @@ export const Header = () => {
   return (
     <header className="sticky top-0 backdrop-blur-sm z-20" id="header">
       {/* sidebar component */}
-      {/* <SideNav isActive={isClick} /> */}
       {isClick && <SideNav isActive={isClick} />}
       {/* sidebar component */}
       <div className="flex justify-center items-center py-3 bg-black text-white text-sm gap-3 relative">
@@ -46,23 +45,45 @@ export const Header = () => {
             {/* hamburger icon */}
 
             <nav className="hidden md:flex gap-6 text-black/60 items-center">
-              <Link to="header" smooth={true} offset={-5000} duration={500}>
+              <ScrollLink
+                to="header"
+                smooth={true}
+                offset={-5000}
+                duration={500}
+              >
                 Home
-              </Link>
-              <Link to="product" smooth={true} offset={-100} duration={500}>
+              </ScrollLink>
+              <ScrollLink
+                to="product"
+                smooth={true}
+                offset={-100}
+                duration={500}
+              >
                 How to use
-              </Link>
-              <Link to="pricing" smooth={true} offset={-100} duration={500}>
+              </ScrollLink>
+              <ScrollLink
+                to="pricing"
+                smooth={true}
+                offset={-100}
+                duration={500}
+              >
                 Features
-              </Link>
-              <Link to="testimonials" smooth={true} offset={-40} duration={500}>
+              </ScrollLink>
+              <ScrollLink
+                to="testimonials"
+                smooth={true}
+                offset={-40}
+                duration={500}
+              >
                 Reviews
-              </Link>
-              <Link to="footer" smooth={true} offset={100} duration={500}>
+              </ScrollLink>
+              <ScrollLink to="footer" smooth={true} offset={100} duration={500}>
                 Help
-              </Link>
+              </ScrollLink>
 
-              <button className="btn btn-primary">Login</button>
+              <Link href="/Login" className="btn btn-primary">
+                Login
+              </Link>
             </nav>
           </div>
         </div>
