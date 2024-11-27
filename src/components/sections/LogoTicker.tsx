@@ -1,8 +1,10 @@
-import acmeLogo from "@/assets/logo-acme.png";
-import quantumLogo from "@/assets/logo-quantum.png";
-import echoLogo from "@/assets/logo-echo.png";
-import celestialLogo from "@/assets/logo-celestial.png";
-import apexLogo from "@/assets/logo-apex.png";
+import typeScript_ from "@/assets/TechStack/type.png";
+import tailwind_ from "@/assets/TechStack/tailwind.png";
+import nextjs_ from "@/assets/TechStack/nextjs.png";
+import motion_ from "@/assets/TechStack/motion.png";
+import mongo_ from "@/assets/TechStack/mongo.png";
+import prisma_ from "@/assets/TechStack/prisma.png";
+import shad_ from "@/assets/TechStack/shad.png";
 
 import { motion } from "motion/react";
 
@@ -25,18 +27,22 @@ export const LogoTicker = () => {
               repeatType: "loop",
             }}
           >
-            <Image src={acmeLogo} alt="" className="logo-ticker-image" />
-            <Image src={quantumLogo} alt="" className="logo-ticker-image" />
-            <Image src={echoLogo} alt="" className="logo-ticker-image" />
-            <Image src={celestialLogo} alt="" className="logo-ticker-image" />
-            <Image src={apexLogo} alt="" className="logo-ticker-image" />
+            <Image src={typeScript_} alt="" className="logo-ticker-image" />
+            <Image src={tailwind_} alt="" className="logo-ticker-image" />
+            <Image src={nextjs_} alt="" className="logo-ticker-image" />
+            <Image src={motion_} alt="" className="logo-ticker-image" />
+            <Image src={mongo_} alt="" className="logo-ticker-image" />
+            <Image src={prisma_} alt="" className="logo-ticker-image" />
+            <Image src={shad_} alt="" className="logo-ticker-image" />
 
             {/* second set of logos for animation */}
-            <Image src={acmeLogo} alt="" className="logo-ticker-image" />
-            <Image src={quantumLogo} alt="" className="logo-ticker-image" />
-            <Image src={echoLogo} alt="" className="logo-ticker-image" />
-            <Image src={celestialLogo} alt="" className="logo-ticker-image" />
-            <Image src={apexLogo} alt="" className="logo-ticker-image" />
+            <Image src={typeScript_} alt="" className="logo-ticker-image" />
+            <Image src={tailwind_} alt="" className="logo-ticker-image" />
+            <Image src={nextjs_} alt="" className="logo-ticker-image" />
+            <Image src={motion_} alt="" className="logo-ticker-image" />
+            <Image src={mongo_} alt="" className="logo-ticker-image" />
+            <Image src={prisma_} alt="" className="logo-ticker-image" />
+            <Image src={shad_} alt="" className="logo-ticker-image" />
           </motion.div>
         </div>
       </div>
