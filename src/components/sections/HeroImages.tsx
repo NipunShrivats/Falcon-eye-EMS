@@ -3,12 +3,7 @@ import React from "react";
 import cogImage from "@/assets/cog.png";
 import cylinderImage from "@/assets/cylinder.png";
 import noodleImage from "@/assets/noodle.png";
-import {
-  motion,
-  // useScroll,
-  // useTransform,
-  // useMotionValueEvent,
-} from "motion/react";
+import { motion } from "motion/react";
 
 export default function HeroImages() {
   return (
@@ -18,7 +13,6 @@ export default function HeroImages() {
         alt=""
         className="md:absolute md:h-full md:w-auto md:max-w-none md:-left-8 lg:left-32"
         animate={{
-          // translateX: [-30, 30],
           rotate: "360deg",
         }}
         transition={{
@@ -33,7 +27,6 @@ export default function HeroImages() {
         className="absolute -top-24 w-20 md:w-28 md:-top-6"
         animate={{
           translateY: [-30, 30],
-          // rotate: "45deg",
         }}
         transition={{
           repeat: Infinity,
@@ -47,10 +40,8 @@ export default function HeroImages() {
         width={220}
         height={220}
         className="absolute right-6 w-20 md:w-28 md:bottom-0 md:-left-16 xl:left-[50rem] xl:w-36"
-        // style={{ translateY: translateY }}
         animate={{
           translateY: [30, -30],
-          // rotate: "45deg",
         }}
         transition={{
           repeat: Infinity,

@@ -1,26 +1,11 @@
 // "use client";
 import { ArrowRight } from "lucide-react";
 import HeroImages from "./HeroImages";
-// import cogImage from "@/assets/cog.png";
-// import cylinderImage from "@/assets/cylinder.png";
-// import noodleImage from "@/assets/noodle.png";
-// import Image from "next/image";
 
-// import {
-//   motion,
-//   // useScroll,
-//   // useTransform,
-//   // useMotionValueEvent,
-// } from "motion/react";
 import { useRef } from "react";
 
 export const Hero = () => {
   const heroRef = useRef(null);
-  // const { scrollYProgress } = useScroll({
-  //   target: heroRef,
-  //   offset: ["start end", "end start"],
-  // });
-  // const translateY = useTransform(scrollYProgress, [0, 1], [150, -150]);
   return (
     <section
       ref={heroRef}
