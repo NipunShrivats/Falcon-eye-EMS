@@ -36,17 +36,19 @@
   }
 
   .section-description {
-    @apply text-center text-[22px] leading-[30px] tracking-tight text-[#010D3E];
+    @apply text-center text-[20px] leading-[30px] tracking-tight text-[#010D3E];
   }
 
   .rangeela {
-    background: linear-gradient(to right,
-        #dd7ddf,
-        #e1cd86,
-        #bbcd92,
-        #71c2ef,
-        #3bffff,
-        #dd7ddf);
+    background: linear-gradient(
+      to right,
+      #dd7ddf,
+      #e1cd86,
+      #bbcd92,
+      #71c2ef,
+      #3bffff,
+      #dd7ddf
+    );
   }
 
   .section-heading {

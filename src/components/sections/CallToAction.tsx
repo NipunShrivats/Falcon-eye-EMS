@@ -5,7 +5,7 @@ import { motion } from "motion/react";
 
 export const CallToAction = () => {
   return (
-    <section className="bg-gradient-to-b from-white to-[#D2DCFF] py-24 overflow-x-clip">
+    <section className="bg-gradient-to-b from-white to-[#D2DCFF] py-24 overflow-x-clip p-2">
       <div className="container">
         <div className="section-heading relative">
           <h2 className="section-title">Sign up for free</h2>
