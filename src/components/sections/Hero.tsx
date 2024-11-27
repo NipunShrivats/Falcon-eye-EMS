@@ -3,13 +3,13 @@ import { ArrowRight } from "lucide-react";
 import cogImage from "@/assets/cog.png";
 import cylinderImage from "@/assets/cylinder.png";
 import noodleImage from "@/assets/noodle.png";
-import Image from "next/image";
+// import Image from "next/image";
 
 import {
   motion,
   useScroll,
   useTransform,
-  useMotionValueEvent,
+  // useMotionValueEvent,
 } from "motion/react";
 import { useRef } from "react";
 
@@ -19,7 +19,7 @@ export const Hero = () => {
     target: heroRef,
     offset: ["start end", "end start"],
   });
-  const translateY = useTransform(scrollYProgress, [0, 1], [150, -150]);
+  // const translateY = useTransform(scrollYProgress, [0, 1], [150, -150]);
   return (
     <section
       ref={heroRef}
