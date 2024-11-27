@@ -1,7 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import starImage from "@/assets/star.png";
 import springImage from "@/assets/spring.png";
-import Image from "next/image";
 import { motion } from "motion/react";
 
 export const CallToAction = () => {
