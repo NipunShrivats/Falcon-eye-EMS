@@ -9,8 +9,6 @@ import avatar8 from "@/assets/avatar-8.png";
 import avatar9 from "@/assets/avatar-9.png";
 
 import Image from "next/image";
-// import { twMerge } from "tailwind-merge";
-import { div } from "motion/react-client";
 import { motion } from "motion/react";
 import * as React from "react";
 const testimonials = [
