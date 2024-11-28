@@ -97,20 +97,10 @@
   .hamburger {
     cursor: pointer;
   }
-  .login-background {
-    @apply bg-gradient-to-r from-[#4c6ef5] to-[#d290f1] h-[100vh] flex items-center justify-center;
+  .input-box {
+    @apply border-2 border-slate-900 flex;
   }
-  .login-box {
-    @apply flex items-center justify-between w-[50%] 
-    /* border-2; */
-    shadow-2xl;
-  }
-  .left-side {
-    @apply w-[60%] 
-    /* border-2; */;
-  }
-  .right-side {
-    @apply w-[40%] 
-    /* border-2; */;
+  .login-input {
+    @apply w-[15rem] bg-[transparent]  outline-none;
   }
 }
