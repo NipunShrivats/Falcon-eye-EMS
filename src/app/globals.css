@@ -98,9 +98,9 @@
     cursor: pointer;
   }
   .input-box {
-    @apply border-2 border-slate-900 flex;
+    @apply bg-[transparent] flex px-1 py-2 pl-2 rounded-[.2rem] text-slate-600 border-[1px] border-[rgba(0,0,0,0.2)] hover:border-[rgba(0,0,0,0.6)];
   }
   .login-input {
-    @apply w-[15rem] bg-[transparent]  outline-none;
+    @apply w-[15rem] bg-[transparent] pl-3 outline-none bg-gradient-to-r from-[#4c6ef5] to-[#d290f1] text-transparent bg-clip-text font-medium placeholder-gray-400;
   }
 }
