@@ -7,8 +7,8 @@ import loginImg from "@/assets/LoginForm/login-Img6.jpg";
 import { User, LockKeyhole } from "lucide-react";
 export default function Login() {
   return (
-    // <div className="bg-gradient-to-r from-[#4c6ef5] via-[#956eee] to-[#d290f1] h-[100vh]">
-    <div className="bg-[url('@/assets/LoginForm/login-Img6.jpg')] bg-center bg-no-repeat bg-cover ">
+    <div className="bg-gradient-to-r from-[#4c6ef5] via-[#956eee] to-[#d290f1] h-[100vh]">
+      {/* // <div className="bg-[url('@/assets/LoginForm/login-Img6.jpg')] bg-center bg-no-repeat bg-cover "> */}
       <Header />
       <div className="flex items-center justify-center flex-col h-[82vh]">
         <div className="flex items-center justify-between rounded-xl shadow-2xl">
