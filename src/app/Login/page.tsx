@@ -5,9 +5,17 @@ import { Header } from "@/components/sections/Header";
 
 import loginImg from "@/assets/LoginForm/login-Img6.jpg";
 import { User, LockKeyhole } from "lucide-react";
+
+import bird1 from "@/assets/LoginForm/bird1.png";
+import bird2 from "@/assets/LoginForm/bird2.png";
+import bird3 from "@/assets/LoginForm/bird3.png";
+import bird4 from "@/assets/LoginForm/bird4.png";
+
 export default function Login() {
   return (
-    <div className="bg-gradient-to-r from-[#4c6ef5] via-[#956eee] to-[#d290f1] h-[100vh]">
+    // <div className="bg-gradient-to-r from-[#4c6ef5] via-[#956eee] to-[#d290f1] h-[100vh]]">
+    <div className="bg-gradient-to-r from-[#98adff] via-[#6523ff94] to-[#1352ff47] h-[100vh]]">
+      {/* <div className="h-[100vh]]"> */}
       <Header />
       <div className="flex items-center justify-center flex-col h-[82vh]">
         <div className="flex items-center justify-between rounded-xl shadow-2xl">
@@ -54,6 +62,13 @@ export default function Login() {
             </form>
           </div>
         </div>
+      </div>
+
+      <div className="">
+        <Image src={bird1} alt="" className="bird" />
+        <Image src={bird2} alt="" className="bird" />
+        <Image src={bird3} alt="" className="bird" />
+        <Image src={bird4} alt="" className="bird" />
       </div>
     </div>
   );
