@@ -14,7 +14,6 @@ import bird4 from "@/assets/LoginForm/bird4.png";
 
 import cogImage from "@/assets/cog.png";
 import starImage from "@/assets/star.png";
-import springImage from "@/assets/spring.png";
 
 export default function Login() {
   return (
@@ -33,7 +32,6 @@ export default function Login() {
             />
           </div>
           <div className="">
-            {/* <motion.img src={bird1.src} alt="" className="bird top-15 left-5" /> */}
             <motion.img
               src={bird2.src}
               alt=""
