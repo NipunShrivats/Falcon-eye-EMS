@@ -2,14 +2,15 @@
 import React from "react";
 import Image from "next/image";
 import { Header } from "@/components/sections/Header";
+import { motion } from "motion/react";
 
 import loginImg from "@/assets/LoginForm/login-Img6.jpg";
 import { User, LockKeyhole } from "lucide-react";
 
 // import bird1 from "@/assets/LoginForm/bird1.png";
-// import bird2 from "@/assets/LoginForm/bird2.png";
-// import bird3 from "@/assets/LoginForm/bird3.png";
-// import bird4 from "@/assets/LoginForm/bird4.png";
+import bird2 from "@/assets/LoginForm/bird2.png";
+import bird3 from "@/assets/LoginForm/bird3.png";
+import bird4 from "@/assets/LoginForm/bird4.png";
 
 export default function Login() {
   return (
@@ -17,15 +18,44 @@ export default function Login() {
     <div className="bg-gradient-to-r from-[#98adff] via-[#6523ff94] to-[#1352ff47] h-[100vh]]">
       {/* <div className="h-[100vh]]"> */}
       <Header />
-      <div className="flex items-center justify-center flex-col h-[82vh]">
-        <div className="flex-col flex items-center justify-between shadow-2xl px-4">
+      <div className="flex items-center justify-center flex-col h-[82vh] ">
+        <div className="flex-col flex items-center justify-between shadow-2xl mx-4 relative rounded-xl">
           <div className="">
             <Image
               src={loginImg}
               alt="loginImg"
               className="w-[40rem] h-auto rounded-t-xl"
             />
-            {/* <div className="">hi</div> */}
+          </div>
+          <div className="">
+            {/* <motion.img src={bird1.src} alt="" className="bird top-15 left-5" /> */}
+            <motion.img
+              src={bird2.src}
+              alt=""
+              className="bird top-12 right-15"
+              animate={{
+                translateY: [-30, 30],
+              }}
+              transition={{
+                repeat: Infinity,
+                repeatType: "mirror",
+                duration: 20,
+              }}
+            />
+            <motion.img
+              src={bird3.src}
+              alt=""
+              className="bird top-2 right-20"
+              animate={{
+                translateX: [30, -20],
+              }}
+              transition={{
+                repeat: Infinity,
+                repeatType: "mirror",
+                duration: 20,
+              }}
+            />
+            <motion.img src={bird4.src} alt="" className="bird top-5 left-8" />
           </div>
           <div className="bg-white h-[18rem] rounded-b-xl w-full flex flex-col items-center justify-center gap-4 ">
             <h3 className="font-sans font-bold text-black text-xl">

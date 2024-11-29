@@ -105,6 +105,6 @@
   }
 
   .bird {
-    @apply w-20;
+    @apply w-8 absolute;
   }
 }
