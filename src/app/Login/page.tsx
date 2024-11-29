@@ -18,7 +18,7 @@ export default function Login() {
       {/* <div className="h-[100vh]]"> */}
       <Header />
       <div className="flex items-center justify-center flex-col h-[82vh]">
-        <div className="flex-col flex items-center justify-between shadow-2xl px-4 border-2">
+        <div className="flex-col flex items-center justify-between shadow-2xl px-4">
           <div className="">
             <Image
               src={loginImg}
@@ -27,7 +27,7 @@ export default function Login() {
             />
             {/* <div className="">hi</div> */}
           </div>
-          <div className="bg-white h-[18rem] rounded-b-xl w-full flex flex-col items-center justify-center gap-4 border-2 ">
+          <div className="bg-white h-[18rem] rounded-b-xl w-full flex flex-col items-center justify-center gap-4 ">
             <h3 className="font-sans font-bold text-black text-xl">
               USER LOGIN
             </h3>
