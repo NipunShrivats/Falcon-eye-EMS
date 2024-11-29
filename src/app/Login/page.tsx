@@ -12,19 +12,24 @@ import bird2 from "@/assets/LoginForm/bird2.png";
 import bird3 from "@/assets/LoginForm/bird3.png";
 import bird4 from "@/assets/LoginForm/bird4.png";
 
+import cogImage from "@/assets/cog.png";
+import starImage from "@/assets/star.png";
+import springImage from "@/assets/spring.png";
+
 export default function Login() {
   return (
     // <div className="bg-gradient-to-r from-[#4c6ef5] via-[#956eee] to-[#d290f1] h-[100vh]]">
-    <div className="bg-gradient-to-r from-[#98adff] via-[#6523ff94] to-[#1352ff47] h-[100vh]]">
+    <div className="bg-gradient-to-r from-[#98adff] via-[#1103af74] to-[#1352ff47] ">
       {/* <div className="h-[100vh]]"> */}
       <Header />
-      <div className="flex items-center justify-center flex-col h-[82vh] ">
-        <div className="flex-col flex items-center justify-between shadow-2xl mx-4 relative rounded-xl">
+      <div className="flex items-center justify-center flex-col h-[84vh]">
+        <div className="flex-col flex items-center justify-between shadow-2xl mx-4 relative rounded-xl lg:flex-row ">
           <div className="">
             <Image
               src={loginImg}
               alt="loginImg"
-              className="w-[40rem] h-auto rounded-t-xl"
+              className="w-[40rem] h-auto rounded-t-xl
+              blur-[1px] md:w-[35rem] md:h-[20rem] lg:rounded-t-none lg:rounded-l-xl lg:w-[40rem] lg:md:h-[30rem]"
             />
           </div>
           <div className="">
@@ -32,32 +37,53 @@ export default function Login() {
             <motion.img
               src={bird2.src}
               alt=""
-              className="bird top-12 right-15"
+              className="bird top-12 right-15 lg:right-[38rem]"
               animate={{
-                translateY: [-30, 30],
+                translateY: [-5, 5],
               }}
               transition={{
                 repeat: Infinity,
                 repeatType: "mirror",
-                duration: 20,
+                duration: 5,
               }}
             />
             <motion.img
               src={bird3.src}
               alt=""
-              className="bird top-2 right-20"
+              className="bird top-2 right-20 lg:right-[22rem]"
               animate={{
-                translateX: [30, -20],
+                translateX: [-5, 5],
               }}
               transition={{
                 repeat: Infinity,
                 repeatType: "mirror",
-                duration: 20,
+                duration: 15,
               }}
             />
-            <motion.img src={bird4.src} alt="" className="bird top-5 left-8" />
+            <motion.img
+              src={bird4.src}
+              alt=""
+              className="bird top-5 left-8 "
+              animate={{
+                scale: 1.5,
+                translateY: [-5, 5],
+              }}
+              transition={{
+                repeat: Infinity,
+                repeatType: "mirror",
+                duration: 10,
+              }}
+            />
+            <div className="font-sans text-white absolute w-[100%] left-0 text-center top-20 md:top-32 lg:w-[67%] lg:top-44">
+              <h1 className="text-[2rem] lg:text-[4rem] uppercase">
+                Welcome Back!
+              </h1>
+              <p className="px-4">
+                Please Login to your account to access your detailed reports.
+              </p>
+            </div>
           </div>
-          <div className="bg-white h-[18rem] rounded-b-xl w-full flex flex-col items-center justify-center gap-4 ">
+          <div className="bg-white h-[18rem] rounded-b-xl w-full flex flex-col items-center justify-center gap-4 lg:w-[20rem] lg:h-full lg:rounded-b-none lg:rounded-r-xl overflow-hidden">
             <h3 className="font-sans font-bold text-black text-xl">
               USER LOGIN
             </h3>
@@ -94,12 +120,32 @@ export default function Login() {
         </div>
       </div>
 
-      {/* <div className="">
-        <Image src={bird1} alt="" className="bird" />
-        <Image src={bird2} alt="" className="bird" />
-        <Image src={bird3} alt="" className="bird" />
-        <Image src={bird4} alt="" className="bird" />
-      </div> */}
+      <motion.img
+        className="absolute hidden lg:block lg:w-[12rem] lg:bottom-[2rem] lg:right-[3rem] xl:w-[20rem] xl:bottom-[6rem] xl:right-[5rem]"
+        src={cogImage.src}
+        alt=""
+        animate={{
+          rotate: "360deg",
+        }}
+        transition={{
+          repeat: Infinity,
+          repeatType: "mirror",
+          duration: 40,
+        }}
+      />
+      <motion.img
+        className="absolute hidden lg:block lg:w-[12rem] lg:top-[8rem] lg:left-[1rem] xl:w-[20rem] xl:top-[6rem] xl:left-[5rem]"
+        src={starImage.src}
+        alt=""
+        animate={{
+          rotate: "-360deg",
+        }}
+        transition={{
+          repeat: Infinity,
+          repeatType: "mirror",
+          duration: 40,
+        }}
+      />
     </div>
   );
 }
