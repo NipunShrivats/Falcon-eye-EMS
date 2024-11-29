@@ -6,10 +6,10 @@ import { Header } from "@/components/sections/Header";
 import loginImg from "@/assets/LoginForm/login-Img6.jpg";
 import { User, LockKeyhole } from "lucide-react";
 
-import bird1 from "@/assets/LoginForm/bird1.png";
-import bird2 from "@/assets/LoginForm/bird2.png";
-import bird3 from "@/assets/LoginForm/bird3.png";
-import bird4 from "@/assets/LoginForm/bird4.png";
+// import bird1 from "@/assets/LoginForm/bird1.png";
+// import bird2 from "@/assets/LoginForm/bird2.png";
+// import bird3 from "@/assets/LoginForm/bird3.png";
+// import bird4 from "@/assets/LoginForm/bird4.png";
 
 export default function Login() {
   return (
@@ -18,16 +18,16 @@ export default function Login() {
       {/* <div className="h-[100vh]]"> */}
       <Header />
       <div className="flex items-center justify-center flex-col h-[82vh]">
-        <div className="flex items-center justify-between rounded-xl shadow-2xl">
+        <div className="flex-col flex items-center justify-between shadow-2xl px-4 border-2">
           <div className="">
             <Image
               src={loginImg}
               alt="loginImg"
-              className="w-[40rem] h-auto rounded-l-xl"
+              className="w-[40rem] h-auto rounded-t-xl"
             />
             {/* <div className="">hi</div> */}
           </div>
-          <div className="bg-white h-full rounded-r-xl w-[20rem] flex flex-col items-center justify-center gap-4 ">
+          <div className="bg-white h-[18rem] rounded-b-xl w-full flex flex-col items-center justify-center gap-4 border-2 ">
             <h3 className="font-sans font-bold text-black text-xl">
               USER LOGIN
             </h3>
@@ -64,12 +64,12 @@ export default function Login() {
         </div>
       </div>
 
-      <div className="">
+      {/* <div className="">
         <Image src={bird1} alt="" className="bird" />
         <Image src={bird2} alt="" className="bird" />
         <Image src={bird3} alt="" className="bird" />
         <Image src={bird4} alt="" className="bird" />
-      </div>
+      </div> */}
     </div>
   );
 }
